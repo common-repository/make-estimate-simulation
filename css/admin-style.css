@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+#wpbody-content .csv .download {
+  display: flex;
+  align-items: center;
+}
+
+#wpbody-content .csv .download .page-title-action {
+  margin-left: 15px;
+}
+
+#wpbody-content .csv .import-action {
+  margin-top: 30px;
+}
+
+#wpbody-content .csv .box+.box {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+#wpbody-content .br-plg-est-register .form {
+  /* margin-top: 30px; */
+}
+
+#wpbody-content .br-plg-est-register .line {
+  margin-top: 20px;
+}
+
+#wpbody-content .js--line_addition_counter {
+  display: none;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table {
+  margin-top: 30px;
+  border-spacing: 0;
+  border: 1px solid #8c8f94;
+  width: 93%;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table *:not(input) {
+  width: 100%;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table th,
+#wpbody-content .br-plg-est-register .br-plg-est-select-table td {
+  padding: 10px;
+  width: calc((100% - 50px) / 7);
+  text-align: center;
+}
+#wpbody-content .br-plg-est-register .br-plg-est-select-table td[data-type="default_flg"] {
+  width: 50px;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table input {
+  margin: 0;
+}
+#wpbody-content .br-plg-est-register .br-plg-est-select-table [data-type="fee"] input {
+  width: 100px;
+}
+#wpbody-content .br-plg-est-register .br-plg-est-select-table [data-type="count_unit"] input {
+  width: 80px;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table textarea {
+  min-height: 50px;
+  padding: 5px;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table th {
+  border-bottom: 1px solid #8c8f94;
+  background-color: #cfcfcf;
+  font-size: 13px;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table th:not(:last-of-type),
+#wpbody-content .br-plg-est-register .br-plg-est-select-table td:not(:last-of-type) {
+  border-right: 1px solid #8c8f94;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table th:first-of-type,
+#wpbody-content .br-plg-est-register .br-plg-est-select-table td:first-of-type {
+  width: 30px;
+}
+
+#wpbody-content .br-plg-est-order-before-btn,
+#wpbody-content .br-plg-est-order-after-btn {
+  cursor: pointer;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+#wpbody-content .br-plg-est-order-before-btn:before,
+#wpbody-content .br-plg-est-order-after-btn:before {
+  content: '';
+  background: none;
+  border-top: 8px solid transparent;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #b12229;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#wpbody-content .br-plg-est-order-after-btn:before {
+  border-top: 8px solid #b12229;
+  border-bottom: 8px solid transparent;
+  top: auto;
+  bottom: -10px;
+}
+#wpbody-content .br-plg-est-order-before-btn:hover:before {
+  border-bottom: 8px solid #2271b1;
+}
+#wpbody-content .br-plg-est-order-after-btn:hover:before {
+  border-top: 8px solid #2271b1;
+}
+#wpbody-content .br-plg-est-register .br-plg-est-select-table tr:first-of-type .br-plg-est-order-before-btn {
+  display: block;
+}
+#wpbody-content .br-plg-est-register .br-plg-est-select-table tr:last-of-type .br-plg-est-order-after-btn {
+  display: block;
+}
+#wpbody-content .br-plg-est-register .br-plg-est-select-table tbody:first-of-type tr:first-of-type .br-plg-est-order-before-btn {
+  display: none;
+}
+#wpbody-content .br-plg-est-register .br-plg-est-select-table tbody:last-of-type tr:last-of-type .br-plg-est-order-after-btn {
+  display: none;
+}
+
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table .mask {
+  pointer-events: none;
+  position: relative;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table .mask:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table .add-item {
+  position: relative;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table .add-btn {
+  position: absolute;
+  height: 28px;
+  width: fit-content;
+  border: 1px solid #2271b1;
+  color: #f6f7f7;
+  background: #2271b1;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: -40px;
+  text-align: center;
+  padding: 2px 5px 5px 5px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table .add-btn:hover {
+  background: #f6f7f7;
+  color: #2271b1;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table .last-item {
+  position: relative;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table .del-btn {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border: 1px solid #b12229;
+  background-color: #b12229;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: calc(-40px + -1em + -20px);
+  text-align: center;
+  padding: 4.5px 5px;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table .del-btn img {
+  width: 1em;
+  height: 1em;
+  object-fit: contain;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table .del-btn:hover{
+  filter: brightness(60%);
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table tbody:nth-of-type(2n) {
+  background-color: rgba(34, 113, 177, 0.2);
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table tr {
+  position: relative;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table tr .add-btn {
+  display: none;
+}
+
+#wpbody-content .br-plg-est-register .br-plg-est-select-table tr[data-add_btn_flg=true] .add-btn {
+  display: block;
+}
+
+
+#wpbody-content .br-plg-est-register #titlediv {
+  margin-top: 15px;
+  width: 93%;
+}
+
+#wpbody-content .est-table-list .red {
+  color: #b32d2e;
+}
+
+#adminmenu .wp-submenu li a[href*='estimate-simulation-trash'],
+#adminmenu .wp-submenu li a[href*='estimate-simulation-edit'],
+#adminmenu .wp-submenu li a[href*='estimate-simulation-progress'],
+#adminmenu .wp-submenu li a[href*='estimate-simulation-preview'] {
+  display: none;
+}
+
+.br-plg-est-register .bg {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  z-index: 99999;
+  overflow: auto;
+}
+
+.est-table-list input:disabled {
+  color: #333;
+}
+
+.shortcode_input_wrap {
+  position: relative;
+}
+
+.est-table-list .copy_message {
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  right: -90px;
+  bottom: 0;
+  margin: 0;
+}
+
+.estimate-simulation-csv .form_wrap {
+  margin: 30px 0;
+}
+
+.estimate-simulation-csv .sub-txt {
+  margin-top: 0;
+  font-size: 11px;
+}
+
+.estimate-simulation-csv .sub-txt a {
+  font-weight: bold;
+}
+
+.estimate-simulation-csv .sub-txt a:hover {
+  text-decoration: none;
+}
+
+.estimate-simulation-csv .red {
+  color: #b32d2e;
+  font-size: 14px;
+}
+
+#est_table_list_form .shortcode_input {
+  width: 100%;
+  border-color: #ccc;
+  max-width: 200px;
+}
+#wpbody-content .br-plg-est-register  .shortcode_input {
+  width: 230px;
+}
+
+#wpbody-content .br-plg-est-register .page-title-action:disabled {
+  cursor: auto;
+  opacity: 0.5;
+}
+
+#wpbody-content .br-plg-est-register .page-title-action:disabled:hover {
+  color: #2271b1;
+  background: #f6f7f7;
+  border-color: #2271b1;
+}
+
+#wpbody-content .br-plg-est-register .btn-wrap {
+  position: relative;
+}
+
+#wpbody-content .br-plg-est-register .page-title-action:disabled:hover:after {
+  position: absolute;
+  content: '「更新」を押してから、再度お試しください';
+  left: 0;
+  bottom: -24px;
+  white-space: nowrap;
+}
